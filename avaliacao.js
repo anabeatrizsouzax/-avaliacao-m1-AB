@@ -18,7 +18,7 @@ const catalogo = [
 
     //3
    function  gerarRelatorioDeFilmes(catalogo){
-    return catalogo.filter(filme => filme.titulo  &&  filme.ano >= 2010)
+    return catalogo.filter(filme => filme.titulo  &&  filme.ano >= 2010).map(filme => {return filme.titulo})
 
 
    }
